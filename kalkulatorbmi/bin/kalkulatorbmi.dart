@@ -18,6 +18,7 @@ void hitungBMI(
   } else {
     kategori = "Obesitas";
   }
+  // Tampilkan hasil
 
   // Simpan hasil ke riwayat
   riwayat.add({
