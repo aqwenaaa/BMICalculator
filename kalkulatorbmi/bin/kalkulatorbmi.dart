@@ -18,6 +18,7 @@ void hitungBMI(
   } else {
     kategori = "Obesitas";
   }
+  // Tampilkan hasil
 
   // Simpan hasil ke riwayat
   riwayat.add({
@@ -34,16 +35,4 @@ void tampilkanRiwayat(List<Map<String, dynamic>> riwayat) {
       "Tinggi: ${data['tinggi']} cm, Berat: ${data['berat']} kg, BMI: ${data['bmi'].toStringAsFixed(2)}, Kategori: ${data['kategori']}",
     );
   }
-}
-
-void main() {
-  List<Map<String, dynamic>> riwayat = [];
-
-  // Simulasi beberapa input
-  hitungBMI(170, 65, riwayat);
-  hitungBMI(165, 75, riwayat);
-  hitungBMI(180, 85, riwayat);
-
-  // Tampilkan riwayat menggunakan perulangan
-  tampilkanRiwayat(riwayat);
 }
